@@ -27,6 +27,12 @@ Image recognition and processing project written in Python using OpenCV. Determi
   $ pip install polyglot
   ```
 
+## Pytohn dependencies
+  Python dependencies can be installed as well by using requirements.txt file
+  ```
+  pip install -r requirements.txt
+  ```
+
 # Tesseract Data
 
 Tesseract requires external data files to properly detect languages.

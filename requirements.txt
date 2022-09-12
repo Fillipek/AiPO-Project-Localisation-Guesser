@@ -1,0 +1,9 @@
+opencv-python~=4.5.4.60
+imutils~=0.5.4
+numpy~=1.21.5
+pytesseract~=0.3.10
+matplotlib~=3.5.3
+sklearn~=0.0
+scikit-learn~=1.1.2
+polyglot~=16.7.4
+pandas~=1.4.4
