@@ -1,0 +1,97 @@
+ 
+
+ 
+
+Text is at different regions
+
+ 
+
+ 
+ 
+
+ 
+
+This is SAMPLE TEXT
+
+ 
+
+ 
+ This is SAMPLE TEXT
+
+Text is at different regions
+
+name: angielski   code: en       confidence:  98.0 read bytes:  1671
+name: un          code: un       confidence:   0.0 read bytes:     0
+name: un          code: un       confidence:   0.0 read bytes:     0
+ 
+
+ 
+
+Тех{ 15 а{ !Негеп'! гев1оп5
+
+ 
+
+ 
+ 
+
+ 
+
+ТЫ5 15 ВАМР1Е ТЕХТ
+
+ 
+
+ 
+ ТЫ\5 15 ВАМР1Е ТЕХТ
+
+Тех{ 15 а{ !Негеп'! гев1оп5
+
+ 
+
+5 لمع هآانك 2 كا 1
+
+ 
+
+ 
+
+ 
+ 
+
+ألا1 ع 58101 ىا كنط 1
+
+ 
+
+ 
+
+ 
+ ع1 عاطا/5 ىا كنط 1
+
+5 لمع هآانك 2 كا 1
+
+name: arabski     code: ar       confidence:  98.0 read bytes:   144
+name: un          code: un       confidence:   0.0 read bytes:     0
+name: un          code: un       confidence:   0.0 read bytes:     0
+ 
+
+ 
+
+Text is at different regions
+
+ 
+
+ 
+ 
+
+ 
+
+This is SAMPLE TEXT
+
+ 
+
+ 
+ This is SAMPLE TEXT
+
+Text is at different regions
+
+name: angielski   code: en       confidence:  98.0 read bytes:  1671
+name: un          code: un       confidence:   0.0 read bytes:     0
+name: un          code: un       confidence:   0.0 read bytes:     0

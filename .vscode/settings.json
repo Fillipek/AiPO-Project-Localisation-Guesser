@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.env.linux": {
+        "TESSDATA_PREFIX": "/home/marcin/workarea/tessdata"
+    }
+}

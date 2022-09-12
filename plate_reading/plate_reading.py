@@ -141,6 +141,7 @@ def findDominantColour(finalPlate):
 
 
 def extractCarPlate(img, carPlate):
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # mask with zeros in size of whole image
     mask = np.zeros(gray.shape,np.uint8)
     # create mask with white colour (1) where selected licence plate is and black (0) elsewhere
@@ -195,9 +196,7 @@ def checkIfPlatesAreYellow(dominantColourRGB):
     if (dominantColourRGB > [0, 93, 22]).all() and (dominantColourRGB < [255, 255, 45]).all() :
         return "As the car plate background is yellow, it may be from countries like: \nEUROPE: Luxembourg, Netherlands, United Kingdom, also Denmark and Hungary but only for commercial vehicles. \nASIA: North Korea, Oman, Israel \nAFRICA: Namibia Tanzania, Zimbabwe, Gabon, Suriname"
     elif (dominantColourRGB > [4, 31, 86]).all() and (dominantColourRGB < [50, 150, 220]).all() :
-        return "As the car plate background is blue, it may be from China, Yemen, Peru"
-    elif (dominantColourRGB > [100, 15, 17]).all() and (dominantColourRGB < [200, 56, 50]).all() :
-        return "As the car plate background is red, it may be from Nepal, Bhutan"
+        return "As the car plprocess_videoate background is red, it may be from Nepal, Bhutan"
     elif (dominantColourRGB < [38, 38, 38]).all() :
         return "As the car plate background is black, it may be from \nASIA: North Yemen, Pakistan, Papua New Guinea, Singapore, South Yemen, Timor Leste, Vietnam, Brunei, Myanmar, India, Indonesia, Malaysia \nAFRICA: Nigeria, Sierra Leone, Somalia, Tanganyika, Angola, Egypt, Eritrea, Ethiopia, Libya \nAMERICAS: Argentina, Guyana"
     return "Background of this carplate is white, thats the most popular case and doe's not help much"

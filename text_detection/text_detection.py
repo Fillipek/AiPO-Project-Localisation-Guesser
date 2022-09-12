@@ -12,8 +12,8 @@ if (__name__ == "__main__"):
     # pytesseract.pytesseract.tesseract_cmd = 'System_path_to_tesseract.exe'
     
     # Read image from which text needs to be extracted
-    img = cv2.imread("sample.jpg")
-    # img = cv2.imread("russian.jpg")
+    img = cv2.imread("../data/text_rec/sample.jpg")
+    # img = cv2.imread("../data/text_rec/russian.jpg")
     # img = cv2.imread("spanish.png")
     # img = cv2.imread("french.png")
     # img = cv2.imread("books.jpg")
@@ -119,7 +119,7 @@ def prepare_image_contrours(image):
     image = image.copy()
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     _, image = cv2.threshold(image, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_BINARY_INV)
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (18, 18))
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (40, 40))
     image = cv2.dilate(image, kernel, iterations=1)
     contours, _ = cv2.findContours(image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
     return contours
@@ -163,7 +163,7 @@ def detect_language_on_image(image_in, languages_in):
         try :
             languages_in = Detector(text_out[idx]).languages
         except Exception as e:
-            print("Unexpected error: ", str(e))        
+            print("Text detecion failed: ", str(e))        
 
         for language in languages_in:
             languages_out[idx] = languages_in
